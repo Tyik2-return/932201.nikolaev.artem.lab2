@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>2.7</title>
+        <style>
+            div{
+                width: 200px;
+                height: 110px;
+                margin: 0;
+            }
+            .purpleBlock{
+                background-color: rgb(95, 9, 142);
+            }
+            .redBlock{
+                background-color: rgb(127, 21, 21);
+            }
+            .mustardBlock{ 
+                position: absolute;
+                top: 180px;                 left: 80px;
+                background-color: rgb(182, 123, 23);}
+            .SalmonBlock{ 
+                position: absolute;
+                top: 320px;     
+                width: 400px;                 height: 220px;
+                background-color: Salmon;
+            }
+            .BlueVioletBlock{
+                position: absolute;
+                top: 110px;                 left: 200px;
+                background-color: BlueViolet;
+            }
+            .GreenBlock {
+                position: fixed; 
+                bottom: 0px; 
+                right: 0px; 
+                width: 100px; 
+                height: 100px; 
+                background-color: green;
+                display: flex; 
+                justify-content: center;
+                align-items: center; 
+                color: white; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="purpleBlock">it's a static div!</div>
+        <div class="redBlock">it's a dinamic div!</div>
+        <div class="mustardBlock">it's a rilative div!</div>
+        <div class="SalmonBlock">it's a rilative div!<div class="BlueVioletBlock">it's an absolute div with relative parent!</div></div>
+        <div class="GreenBlock">it's a fixed div!</div> 
+        
+    </body>
+</html>

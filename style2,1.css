@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
+    margin: 0; /* Обнуляем отступы браузера */
+   }
+   h3 {
+    font-size: 18px; /* Размер шрифта */
+    font-weight: bold; /* Жирное начертание */
+    color: rgb(0, 0, 0); /* Цвет текста */
+   }
+
+   header { /* Верхний блок */
+    background: #909089; /* Цвет фона */
+    padding: 6px; /* Поля вокруг */
+    height: -40px; 
+   }
+   #leftColumn { /* Левая колонка */
+    float: left; /* Обтекание справа */
+    background-color: rgb(125, 206, 140);
+    width:  200px; /* Ширина колонки */
+    padding: 5px; /* Поля вокруг текста */
+
+   }
+
+   #content { /* Правая колонка */
+    margin: 10px 5px 20px 140px; /* Значения отступов */
+
+   }
+   #Red { 
+    color:red;
+   }
+
+   #Bold { 
+    font-weight: bold;
+   }
+   #foot { /* Нижний блок */
+    background: #333; /* Цвет фона */
+    padding: 5px; /* Поля вокруг текста */
+    color: #eaff00; /* Цвет текста */
+    clear: both; /* Отменяем обтекание */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+   }

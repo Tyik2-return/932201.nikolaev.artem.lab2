@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Матрица</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .matrix {
+      display: flex;
+      margin-bottom: 400px;
+    }
+
+    .column1 {
+      width: 130px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .column2 {
+      display: flex;
+      flex-direction: column;
+      max-width: 2000px;
+      background-color: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: relative; /* Добавлено для позиционирования */
+    }
+
+    .block {
+      height: 100px;
+    }
+
+    .block1 {
+      background-color: moccasin;
+    }
+
+    .block2 {
+      background-color: turquoise;
+      height: 230px;
+    }
+
+    .block3 {
+      background-color: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .image-container {
+      position: absolute; /* Позиционируем картинку относительно родителя */
+      top: 0;
+      right: 0;
+      width: 200px; /* Ширина картинки */
+      height: 200px; /* Высота картинки */
+      overflow: hidden; /* Скрываем выход за пределы */
+    }
+
+    .image-container img {
+      width: 100%; /* Картинка занимает всю ширину */
+      height: auto; /* Автоматически подбирает высоту */
+    }
+
+    .text-container {
+      margin-top: 220px; /* Отступ от картинки */
+    }
+
+    .lorem-text { 
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 400px; 
+      height: 200px;
+      background-color:gray; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 18px;
+      padding: 10px;
+      z-index: 1; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="matrix">
+    <div class="column1">
+      <div class="block block1">
+        <ul>
+            <li>Home</li>
+            <li>Hours</li>
+            <li>Direction</li>
+        </ul>
+      </div>
+      <div class="block block2"></div>
+    </div>
+    <div class="column2">
+      <div class="image-container">
+        <img src="image.jpg" alt="Изображение">
+      </div>
+      <div class="text-container">
+        <div class="block block3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repellat sed incidunt ipsam dolores exercitationem necessitatibus debitis nobis fugit, ullam dicta deleniti? Rem animi nulla voluptatum eaque cum quod sed.</div>
+      </div>
+      <div class="lorem-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur placeat at delectus repellendus in quidem velit. Adipisci velit ipsa iure praesentium? Commodi ipsum provident iusto, doloribus eaque reprehenderit eveniet nemo. Lorem
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
